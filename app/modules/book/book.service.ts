@@ -13,3 +13,9 @@ export const getBooks = async ()=> {
   console.log('from service', books)
   return books;
 }
+
+export const getBook = async (id: string)=> {
+  const book = await Book.findById(id);
+  console.log('from service for single book', book)
+  return book;
+}

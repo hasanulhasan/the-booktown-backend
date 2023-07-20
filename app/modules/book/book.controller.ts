@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { createBookToDB, getBooks } from "./book.service";
+import { createBookToDB, getBook, getBooks } from "./book.service";
 
 export const createBook = async (req: Request, res: Response, next: NextFunction)=> {
   const data = req.body;
@@ -22,4 +22,16 @@ export const getAllBooks = async (req: Request, res: Response, next: NextFunctio
     }
   )
   console.log('All book fetched')
+}
+
+export const getSingleBook = async (req: Request, res: Response, next: NextFunction) => {
+  const id = req.params.id;
+  const book = await getBook(id);
+  res.status(200).json(
+    {
+      status: 'success',
+      data: book
+    }
+  )
+  console.log('Single book fetched')
 }
