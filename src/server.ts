@@ -1,17 +1,18 @@
 import mongoose from 'mongoose';
 import app from './app';
-const port = 9000
+import config from '../config';
 
+const port:number = 9000
 
 async function main() {
   try {
-    await mongoose.connect('mongodb://127.0.0.1:27017/test');
+    await mongoose.connect(config.database_url as string);
     console.log('Database connection successful')
     app.listen(port, () => {
       console.log(`Booktown server is listening on port ${port}`)
     })
   } catch (error) {
-    console.log(error)
+    console.log('database conncetion failed', error)
   }
 }
 main()
