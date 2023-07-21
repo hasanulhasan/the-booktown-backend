@@ -3,10 +3,10 @@ import { createBook, deleteSingleBook, getAllBooks, getSingleBook, updateSingleB
 
 const router = express.Router();
 
-router.get('/books/:id', getSingleBook)
-router.patch('/books/:id', updateSingleBook)
-router.delete('/books/:id', deleteSingleBook)
-router.get('/books', getAllBooks)
+router.get('/:id', getSingleBook)
+router.patch('/:id', updateSingleBook)
+router.delete('/:id', deleteSingleBook)
+router.get('/', getAllBooks)
 router.post('/create-book', createBook)
 
-export default router;
+export const bookRoutes = router;

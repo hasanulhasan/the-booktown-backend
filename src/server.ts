@@ -12,7 +12,7 @@ async function main() {
       console.log(`Booktown server is listening on port ${port}`)
     })
   } catch (error) {
-    console.log('database conncetion failed', error)
+    console.log('database connection failed', error)
   }
 }
 main()

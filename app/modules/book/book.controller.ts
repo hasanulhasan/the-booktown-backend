@@ -21,7 +21,7 @@ export const getAllBooks = async (req: Request, res: Response, next: NextFunctio
       data: books
     }
   )
-  console.log('All book fetched')
+  console.log(`${books.length} books fetched`)
 }
 
 export const getSingleBook = async (req: Request, res: Response, next: NextFunction) => {
