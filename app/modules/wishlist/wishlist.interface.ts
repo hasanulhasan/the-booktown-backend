@@ -1,10 +1,9 @@
 export default interface IWishlist {
-  id: number;
   title: string;
   author: string;
   img: string;
   price: string;
-  rating: number;
+  rating: string;
   genre: string;
   dateOfPublication: string;
   status: boolean;
@@ -12,3 +11,4 @@ export default interface IWishlist {
   isRead: boolean;
   userEmail: string
 }
+

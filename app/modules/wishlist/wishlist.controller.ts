@@ -21,7 +21,7 @@ export const getAllWishedBooks = async (req: Request, res: Response, next: NextF
       data: books
     }
   )
-  console.log(`${books.length} books found`)
+  console.log(`${books.length} Wishedbooks found`)
 }
 
 
