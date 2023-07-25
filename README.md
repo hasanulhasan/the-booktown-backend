@@ -2,7 +2,7 @@
 A Book Selling website
 
 ## Project feature
-1- User can show books, book details and see reviews</br>
+1- User can see books, book details and see reviews</br>
 2- User can filter books by Search and Genre</br>
 3- User can sort books by Price and Date of Published</br>
 4- Authenticated User can Add book</br>
@@ -17,5 +17,5 @@ A Book Selling website
 𝑩𝒂𝒄𝒌 𝑬𝒏𝒅: TypeScript, Node Js, Express Js, MongoDB, Mongoose. </br>
 
 
-### `Live link` coming soon
-### `Front End` coming soon
+### `Live link` https://the-booktown-f5ca6.web.app/
+### `Front End` https://github.com/hasanulhasan/the-booktown
